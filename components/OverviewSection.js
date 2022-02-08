@@ -1,21 +1,24 @@
+import SectionBgTitle from "./SectionBgTitle";
+import SectionDescription from "./SectionDescription";
+import SectionTitle from "./SectionTitle";
+
 export default function OverviewSection() {
   return (
-    <section className="container mx-auto px-28 py-40" id="overview">
+    <section
+      className="container mx-auto px-28 pb-28 pt-24"
+      id="OverviewSection"
+    >
       <div className="flex">
         <div className="w-6/12">
           <div className="flex items-center -ml-16">
-            <span className="text-white/5 text-[100px] font-bold tracking-tight">
-              Overview
-            </span>
-            <h1 className="-ml-96 mt-5 text-white text-[40px] font-bold tracking-tight">
-              Overview
-            </h1>
+            <SectionBgTitle>Overview</SectionBgTitle>
+            <SectionTitle>Overview</SectionTitle>
           </div>
-          <p className="text-white/60 w-8/12">
+          <SectionDescription>
             Nama saya Dedik Sugiharto, saya seorang software-engineer sebelum
             kata software-engineer itu ada. Saya terbiasa ngoding di Microsoft
             Word 2003.
-          </p>
+          </SectionDescription>
 
           <div className="mt-8">
             <h3 className="text-white font-semibold text-[28px] mb-2">

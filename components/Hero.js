@@ -2,14 +2,14 @@ import Navbar from "./Navbar";
 
 export default function Hero() {
   return (
-    <div className="container mx-auto pt-28 px-28" id="hero">
+    <div className="container mx-auto py-28 px-28" id="hero">
       <Navbar />
       <div className="flex mt-28">
         <div className="w-5/12">
           <div className="w-10/12">
             <img
               src="frame 11.png"
-              className="absolute w-[510px] h-[496px] left-16 top-40"
+              className="absolute w-[510px] h-[496px] left-16 top-40 -z-10"
               alt=""
             />
             <h2 className="text-[40px] text-white font-light">Hi, nama saya</h2>
@@ -20,9 +20,15 @@ export default function Hero() {
               Saya seorang software-engineer, pembaca buku, warga NU, dan juga
               murid (online) Pak Fahruddin Faiz.
             </p>
-            <a href="" className="flex items-center">
-              <span class="text-white font-semibold mr-3">Go to Overview</span>
-              <img src="Go to.svg" alt="" />
+            <a href="#OverviewSection" className="flex items-center group">
+              <span class="text-white font-semibold mr-3 animate-pulse hover:animate-none">
+                Go to Overview
+              </span>
+              <img
+                src="Go to.svg"
+                className="animate-ping group-hover:animate-none"
+                alt=""
+              />
             </a>
 
             <div className="flex space-x-10 mt-10">
@@ -53,7 +59,11 @@ export default function Hero() {
             className="absolute w-[632px] h-[660px] -z-10 top-24 right-32"
             alt=""
           />
-          <img src="hero.png" className="w-11/12 ml-20" alt="" />
+          <img
+            src="hero.png"
+            className="w-11/12 hover:scale-105 transition-all duration-300 ease-in-out ml-20"
+            alt=""
+          />
         </div>
       </div>
     </div>
