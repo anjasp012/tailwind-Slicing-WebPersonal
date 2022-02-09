@@ -21,7 +21,7 @@ export default function Hero() {
               murid (online) Pak Fahruddin Faiz.
             </p>
             <a href="#OverviewSection" className="flex items-center group">
-              <span class="text-white font-semibold mr-3 animate-pulse hover:animate-none">
+              <span className="text-white font-semibold mr-3 animate-pulse hover:animate-none">
                 Go to Overview
               </span>
               <img

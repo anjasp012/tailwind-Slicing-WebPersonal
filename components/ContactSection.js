@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SectionBgTitle from "./SectionBgTitle";
 import SectionDescription from "./SectionDescription";
 import SectionTitle from "./SectionTitle";
@@ -16,10 +15,8 @@ export default function ContactSection() {
             Kamu bisa menghubungi saya lewat kedua kontak di bawah ini.
           </SectionDescription>
           <div className="flex items-center mt-11 mb-7">
-            <Image
-              src="/phone-call.svg"
-              width="100"
-              height="100"
+            <img
+              src="phone-call.svg"
               className="p-4 bg-white/5 rounded"
               alt=""
             />
@@ -31,13 +28,7 @@ export default function ContactSection() {
             </div>
           </div>
           <div className="flex items-center">
-            <Image
-              width="100"
-              height="100"
-              src="/mail.svg"
-              className="p-4 bg-white/5 rounded"
-              alt=""
-            />
+            <img src="mail.svg" className="p-4 bg-white/5 rounded" alt="" />
             <div className="ml-7">
               <h3 className="text-white/60 text-[16px]">Email</h3>
               <p className="text-white font-bold text-[20px] select-all">
@@ -47,10 +38,8 @@ export default function ContactSection() {
           </div>
         </div>
         <div className="w-6/12">
-          <Image
-            src="/backed.png"
-            width="100"
-            height="100"
+          <img
+            src="backed.png"
             className="absolute w-[502px] h-[536px] -z-10"
             alt=""
           />
@@ -66,13 +55,7 @@ export default function ContactSection() {
           <div className="flex justify-end mr-20 mt-6 animate-pulse">
             <div className="bg-white/5 p-4 rounded-full animate">
               <div className="bg-white/5 p-4 rounded-full">
-                <Image
-                  width="100"
-                  height="100"
-                  src="/contactphoto.png"
-                  className="w-[70px]"
-                  alt=""
-                />
+                <img src="contactphoto.png" className="w-[70px]" alt="" />
               </div>
             </div>
           </div>
